@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Scrum</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="isolatedavacado.svg" alt="logo page">
+            <button id="newTask" class="button">Create Task</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <h1>Simple Scrum</h1>
+            <div class="task-container">
+                <h2>TO DO</h2>
+                <div class="container" id="toDoTasks">
+                </div>
+            </div>
+            <div class="task-container">
+                <h2>IN PROGRESS</h2>
+                <div class="container" id="inProgressTasks">
+                </div>
+            </div>
+            <div class="task-container">
+                <h2>DONE</h2>
+                <div class="container" id="doneTasks">
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class="aside-container">
+            <h2>New Task</h2>
+            <div class="form-container">
+               <form>
+                <div class="input-container">
+                    <label for="titleTask">Title</label>
+                    <input name="titleTask" type="text" id="titleTask" placeholder="Write a title">
+                </div>
+                <div class="input-container">
+                    <label for="timeTask">Time Limit</label>
+                    <select name="timeTask" id="timeTask">
+                        <option value="">-Select-</option>
+                        <option value="oneDay">One Day</option>
+                        <option value="twoDays">Two Days</option>
+                        <option value="week">One Week</option>
+                    </select>
+                </div>
+                <div class="action-container">
+                    <button type="submit">Save</button>
+                    <button type="reset">Cancel</button>
+                </div>
+               </form>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/scripts/petitions.js"></script>
+</body>
+</html>
